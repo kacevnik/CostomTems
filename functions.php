@@ -98,7 +98,6 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
 	    //Подключаем основные плагины JS (Не нужные отключить!)
 	    wp_enqueue_script('jquery', get_template_directory_uri().'/js/jquery-3.2.0.min.js'); // библиотека jQuery
 	    wp_enqueue_script('bootstrap', get_template_directory_uri().'/js/bootstrap.min.js','','',true); // бутстрап
-	    wp_enqueue_script('footer-reveal', get_template_directory_uri().'/js/footer-reveal.min.js','','',true); // плагин футера
 	    wp_enqueue_script('modernizr', get_template_directory_uri().'/js/modernizr-custom.js','','',true); // Moderniz оптимизация
 	    wp_enqueue_script('wow', get_template_directory_uri().'/js/wow.js','','',true); // плагин для анимирования элементов
 	    wp_enqueue_script('superfish', get_template_directory_uri().'/js/superfish.min.js','','',true); // Плагин для выпадающего меню
@@ -115,6 +114,7 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 	    if(is_admin()) return false; // если мы в админке - ничего не делаем
 	    wp_enqueue_style( 'bs', get_template_directory_uri().'/css/bootstrap.min.css' ); // бутстрап
 	    wp_enqueue_style( 'font', get_template_directory_uri().'/css/font-awesome.min.css' ); //Шрифты
+	    wp_enqueue_style( 'owl-carousel', get_template_directory_uri().'/css/owl.carousel.min.css' ); //Стили для OWL карусели
 		wp_enqueue_style( 'mainstyle', get_template_directory_uri().'/css/style.css' ); // основные стили шаблона
 	}
 }
